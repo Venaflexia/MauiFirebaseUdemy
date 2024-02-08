@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "474680327800",
+    "project_id": "fir-mauiegitim",
+    "storage_bucket": "fir-mauiegitim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474680327800:android:1e8788c523e73b57e0778d",
+        "android_client_info": {
+          "package_name": "com.companyname.maui_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474680327800-d7pk7b01k8rdmeku4o6e8kdnrj9f1qub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9xHp49Xa8kh2-JTcTJ_EGTK5RpfRmqSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474680327800-d7pk7b01k8rdmeku4o6e8kdnrj9f1qub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474680327800:android:b6b7454de02803f5e0778d",
+        "android_client_info": {
+          "package_name": "com.companyname.mauifirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474680327800-d7pk7b01k8rdmeku4o6e8kdnrj9f1qub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9xHp49Xa8kh2-JTcTJ_EGTK5RpfRmqSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474680327800-d7pk7b01k8rdmeku4o6e8kdnrj9f1qub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474680327800:android:575cdbee846d2ae9e0778d",
+        "android_client_info": {
+          "package_name": "com.companyname.mauifirebaseauthfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474680327800-d7pk7b01k8rdmeku4o6e8kdnrj9f1qub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9xHp49Xa8kh2-JTcTJ_EGTK5RpfRmqSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474680327800-d7pk7b01k8rdmeku4o6e8kdnrj9f1qub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
