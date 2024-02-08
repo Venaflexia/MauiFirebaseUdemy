@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFirebase.mvvm.Views.LoginRegisterPage"
+             Title="LoginRegisterPage">
+    <Grid>
+        <StackLayout VerticalOptions="Center" Spacing="15" Padding="15" x:Name="stacklGiris">
+            <Entry  Keyboard="Email" Text="{Binding Email}" Placeholder="Email"/>
+            <Entry Text="{Binding Password}" Placeholder="Şifre"/>
+            <Button Clicked="Button_ClickedGirisYap" Text="Giriş Yap" />
+            <Button TextColor="Black" Text="Hesabım Yok" Clicked="Button_ClickedKayitGiris" BackgroundColor="Transparent"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" Spacing="15" Padding="15" IsVisible="false" x:Name="stacklKayit">
+            <Entry Text="{Binding UserName}" Placeholder="Kullanıcı Adı"/>
+            <Entry Keyboard="Email" Text="{Binding Email}" Placeholder="Email"/>
+            <Entry Text="{Binding Password}" Placeholder="Şifre"/>
+            <Button Clicked="Button_ClickedKayitOl" Text="Kayıt Ol"/>
+            <Button TextColor="Black" Text="Hazırda bir hesabım var" Clicked="Button_ClickedKayitGiris" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

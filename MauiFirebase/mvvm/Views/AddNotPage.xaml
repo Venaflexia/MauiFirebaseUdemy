@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFirebase.mvvm.Views.AddNotPage"
+             Title="AddNotPage">
+   
+    <StackLayout Padding="15" Spacing="15">
+        <Entry x:Name="entry_name" Placeholder="İsim"/>
+        <Editor x:Name="editor_content" Placeholder="Notunuzu Giriniz" VerticalOptions="FillAndExpand"/>
+        <Button Clicked="Button_ClickedKaydet" Text="Kaydet" BackgroundColor="Green" TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>
