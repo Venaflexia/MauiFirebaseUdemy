@@ -12,7 +12,7 @@ namespace MauiFirebase.FirebaseMaui
         bool notekle(NotOzellikleri notOzellikleri);
         bool notguncelle(NotOzellikleri notOzellikleri);
         bool notusil(NotOzellikleri notOzellikleri);
-       // Task<IList<NotOzellikleri>> ReadNotList();
+        Task<IList<NotOzellikleri>> ReadNotList();
     }
     internal class FirebaseFirestore
     {
@@ -29,9 +29,9 @@ namespace MauiFirebase.FirebaseMaui
         {
             return firestore.notusil(notOzellikleri);
         }
-        //public static Task<IList<NotOzellikleri>> ReadNotList()
-        //{
-        //    return firestore.ReadNotList();
-        //}
+        public static Task<IList<NotOzellikleri>> ReadNotList()
+        {
+            return firestore.ReadNotList();
+        }
     }
 }

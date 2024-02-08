@@ -1,4 +1,5 @@
 using MauiFirebase.FirebaseMaui;
+using MauiFirebase.mvvm.Models;
 
 namespace MauiFirebase.mvvm.Views;
 
@@ -15,6 +16,12 @@ public partial class NotListPage : ContentPage
         {
            await Navigation.PushAsync(new LoginRegisterPage());
         }
+        else
+        {
+            IList<NotOzellikleri> mylist=await FirebaseFirestore.ReadNotList();
+            mycollection.ItemsSource= mylist;
+        }
+      
        
     }
 
