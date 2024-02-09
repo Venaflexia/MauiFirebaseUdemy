@@ -31,7 +31,7 @@ namespace MauiFirebase.Platforms
                 {"author",Firebase.Auth.FirebaseAuth.Instance.CurrentUser.Uid},
                 {"notİçeriği",notOzellikleri.Icerik },
                 {"paylaşılmaTarihi",DateTimeToNativeDate(notOzellikleri.OlusturulmaTarihi) },
-                {"paylaşanKişi",notOzellikleri.PaylasanKisi }
+                {"paylasanKisi",notOzellikleri.PaylasanKisi }
             };
                 collection.Add(document);
                 //collection.Document("Babürşah").Set(document);
@@ -59,7 +59,7 @@ namespace MauiFirebase.Platforms
             try
             {
                 var collection = Firebase.Firestore.FirebaseFirestore.Instance.Collection("NotBilgisi");
-                collection.Document(notOzellikleri.Id).Update("paylaşanKisi", notOzellikleri.PaylasanKisi, "notİçeriği", notOzellikleri.Icerik);
+                collection.Document(notOzellikleri.Id).Update("paylasanKisi", notOzellikleri.PaylasanKisi, "notİçeriği", notOzellikleri.Icerik);
                 return true;
             }
             catch (Exception)
@@ -125,7 +125,7 @@ namespace MauiFirebase.Platforms
 
                         Icerik = doc.Get("notİçeriği").ToString(),
                         UserId = doc.Get("author").ToString(),
-                        PaylasanKisi = doc.Get("paylaşanKişi").ToString(),
+                        PaylasanKisi = doc.Get("paylasanKisi").ToString(),
                         OlusturulmaTarihi = NativeDateToDateTime(doc.Get("paylaşılmaTarihi") as Timestamp),
                         Id = doc.Id
 

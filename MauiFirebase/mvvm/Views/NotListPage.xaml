@@ -2,12 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiFirebase.mvvm.Views.NotListPage"
-             Title="NotListPage">
-   
+             Title="NotListPage"
+             xmlns:vm="clr-namespace:MauiFirebase.mvvm.ViewModels">
+
+    <ContentPage.BindingContext>
+        <vm:NotLisVm/>
+    </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
     <ToolbarItem Text="Not Oluştur" Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
-    <CollectionView x:Name="mycollection">
+    <CollectionView x:Name="mycollection" SelectionMode="Single" SelectionChangedCommand="{Binding CmdSelection}" SelectedItem="{Binding SelectedItem}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <StackLayout>

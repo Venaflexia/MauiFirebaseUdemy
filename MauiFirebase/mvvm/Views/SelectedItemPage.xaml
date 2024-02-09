@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFirebase.mvvm.Views.SelectedItemPage"
+             Title="SelectedItemPage">
+    <StackLayout Padding="15" Spacing="15">
+        <Entry x:Name="entry_name" Text="{Binding PaylasanKisi}" Placeholder="İsim"/>
+        <Editor x:Name="editor_content" Text="{Binding Icerik}" Placeholder="Notunuzu Giriniz" VerticalOptions="FillAndExpand"/>
+        <Button  Clicked="Button_ClickedSave" Text="Kaydet" BackgroundColor="Green" TextColor="White"/>
+        <Button  Clicked="Button_ClickedDelete" Text="Sil" BackgroundColor="Red" TextColor="White"/>
+    </StackLayout>
+</ContentPage>
